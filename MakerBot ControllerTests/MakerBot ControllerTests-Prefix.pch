@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MakerBot ControllerTests' target in the 'MakerBot ControllerTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

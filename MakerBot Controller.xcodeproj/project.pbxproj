@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85ED98E71409448200830F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E61409448200830F2D /* UIKit.framework */; };
+		85ED98E91409448200830F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E81409448200830F2D /* Foundation.framework */; };
+		85ED98EB1409448200830F2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98EA1409448200830F2D /* CoreGraphics.framework */; };
+		85ED98F11409448200830F2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85ED98EF1409448200830F2D /* InfoPlist.strings */; };
+		85ED98F41409448200830F2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED98F31409448200830F2D /* main.m */; };
+		85ED98F71409448200830F2D /* MakerBot_ControllerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED98F61409448200830F2D /* MakerBot_ControllerAppDelegate.m */; };
+		85ED98FA1409448200830F2D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85ED98F81409448200830F2D /* MainWindow.xib */; };
+		85ED98FD1409448200830F2D /* MakerBot_ControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED98FC1409448200830F2D /* MakerBot_ControllerViewController.m */; };
+		85ED99001409448200830F2D /* MakerBot_ControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85ED98FE1409448200830F2D /* MakerBot_ControllerViewController.xib */; };
+		85ED99071409448200830F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E61409448200830F2D /* UIKit.framework */; };
+		85ED99081409448200830F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E81409448200830F2D /* Foundation.framework */; };
+		85ED99091409448200830F2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98EA1409448200830F2D /* CoreGraphics.framework */; };
+		85ED99111409448300830F2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85ED990F1409448300830F2D /* InfoPlist.strings */; };
+		85ED99141409448300830F2D /* MakerBot_ControllerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 85ED99131409448300830F2D /* MakerBot_ControllerTests.h */; };
+		85ED99161409448300830F2D /* MakerBot_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED99151409448300830F2D /* MakerBot_ControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85ED990A1409448200830F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85ED98D91409448200830F2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85ED98E11409448200830F2D;
+			remoteInfo = "MakerBot Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85ED98E21409448200830F2D /* MakerBot Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MakerBot Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85ED98E61409448200830F2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85ED98E81409448200830F2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85ED98EA1409448200830F2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85ED98EE1409448200830F2D /* MakerBot Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MakerBot Controller-Info.plist"; sourceTree = "<group>"; };
+		85ED98F01409448200830F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85ED98F21409448200830F2D /* MakerBot Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakerBot Controller-Prefix.pch"; sourceTree = "<group>"; };
+		85ED98F31409448200830F2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85ED98F51409448200830F2D /* MakerBot_ControllerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakerBot_ControllerAppDelegate.h; sourceTree = "<group>"; };
+		85ED98F61409448200830F2D /* MakerBot_ControllerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakerBot_ControllerAppDelegate.m; sourceTree = "<group>"; };
+		85ED98F91409448200830F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		85ED98FB1409448200830F2D /* MakerBot_ControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakerBot_ControllerViewController.h; sourceTree = "<group>"; };
+		85ED98FC1409448200830F2D /* MakerBot_ControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakerBot_ControllerViewController.m; sourceTree = "<group>"; };
+		85ED98FF1409448200830F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MakerBot_ControllerViewController.xib; sourceTree = "<group>"; };
+		85ED99061409448200830F2D /* MakerBot ControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MakerBot ControllerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85ED990E1409448300830F2D /* MakerBot ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MakerBot ControllerTests-Info.plist"; sourceTree = "<group>"; };
+		85ED99101409448300830F2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85ED99121409448300830F2D /* MakerBot ControllerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MakerBot ControllerTests-Prefix.pch"; sourceTree = "<group>"; };
+		85ED99131409448300830F2D /* MakerBot_ControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakerBot_ControllerTests.h; sourceTree = "<group>"; };
+		85ED99151409448300830F2D /* MakerBot_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakerBot_ControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85ED98DF1409448200830F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED98E71409448200830F2D /* UIKit.framework in Frameworks */,
+				85ED98E91409448200830F2D /* Foundation.framework in Frameworks */,
+				85ED98EB1409448200830F2D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85ED99021409448200830F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED99071409448200830F2D /* UIKit.framework in Frameworks */,
+				85ED99081409448200830F2D /* Foundation.framework in Frameworks */,
+				85ED99091409448200830F2D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85ED98D71409448200830F2D = {
+			isa = PBXGroup;
+			children = (
+				85ED98EC1409448200830F2D /* MakerBot Controller */,
+				85ED990C1409448200830F2D /* MakerBot ControllerTests */,
+				85ED98E51409448200830F2D /* Frameworks */,
+				85ED98E31409448200830F2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85ED98E31409448200830F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85ED98E21409448200830F2D /* MakerBot Controller.app */,
+				85ED99061409448200830F2D /* MakerBot ControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85ED98E51409448200830F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85ED98E61409448200830F2D /* UIKit.framework */,
+				85ED98E81409448200830F2D /* Foundation.framework */,
+				85ED98EA1409448200830F2D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85ED98EC1409448200830F2D /* MakerBot Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85ED98F51409448200830F2D /* MakerBot_ControllerAppDelegate.h */,
+				85ED98F61409448200830F2D /* MakerBot_ControllerAppDelegate.m */,
+				85ED98F81409448200830F2D /* MainWindow.xib */,
+				85ED98FB1409448200830F2D /* MakerBot_ControllerViewController.h */,
+				85ED98FC1409448200830F2D /* MakerBot_ControllerViewController.m */,
+				85ED98FE1409448200830F2D /* MakerBot_ControllerViewController.xib */,
+				85ED98ED1409448200830F2D /* Supporting Files */,
+			);
+			path = "MakerBot Controller";
+			sourceTree = "<group>";
+		};
+		85ED98ED1409448200830F2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85ED98EE1409448200830F2D /* MakerBot Controller-Info.plist */,
+				85ED98EF1409448200830F2D /* InfoPlist.strings */,
+				85ED98F21409448200830F2D /* MakerBot Controller-Prefix.pch */,
+				85ED98F31409448200830F2D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85ED990C1409448200830F2D /* MakerBot ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				85ED99131409448300830F2D /* MakerBot_ControllerTests.h */,
+				85ED99151409448300830F2D /* MakerBot_ControllerTests.m */,
+				85ED990D1409448300830F2D /* Supporting Files */,
+			);
+			path = "MakerBot ControllerTests";
+			sourceTree = "<group>";
+		};
+		85ED990D1409448300830F2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85ED990E1409448300830F2D /* MakerBot ControllerTests-Info.plist */,
+				85ED990F1409448300830F2D /* InfoPlist.strings */,
+				85ED99121409448300830F2D /* MakerBot ControllerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85ED98E11409448200830F2D /* MakerBot Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85ED99191409448300830F2D /* Build configuration list for PBXNativeTarget "MakerBot Controller" */;
+			buildPhases = (
+				85ED98DE1409448200830F2D /* Sources */,
+				85ED98DF1409448200830F2D /* Frameworks */,
+				85ED98E01409448200830F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MakerBot Controller";
+			productName = "MakerBot Controller";
+			productReference = 85ED98E21409448200830F2D /* MakerBot Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85ED99051409448200830F2D /* MakerBot ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85ED991C1409448300830F2D /* Build configuration list for PBXNativeTarget "MakerBot ControllerTests" */;
+			buildPhases = (
+				85ED99011409448200830F2D /* Sources */,
+				85ED99021409448200830F2D /* Frameworks */,
+				85ED99031409448200830F2D /* Resources */,
+				85ED99041409448200830F2D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85ED990B1409448200830F2D /* PBXTargetDependency */,
+			);
+			name = "MakerBot ControllerTests";
+			productName = "MakerBot ControllerTests";
+			productReference = 85ED99061409448200830F2D /* MakerBot ControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85ED98D91409448200830F2D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 85ED98DC1409448200830F2D /* Build configuration list for PBXProject "MakerBot Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85ED98D71409448200830F2D;
+			productRefGroup = 85ED98E31409448200830F2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85ED98E11409448200830F2D /* MakerBot Controller */,
+				85ED99051409448200830F2D /* MakerBot ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85ED98E01409448200830F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED98F11409448200830F2D /* InfoPlist.strings in Resources */,
+				85ED98FA1409448200830F2D /* MainWindow.xib in Resources */,
+				85ED99001409448200830F2D /* MakerBot_ControllerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85ED99031409448200830F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED99111409448300830F2D /* InfoPlist.strings in Resources */,
+				85ED99141409448300830F2D /* MakerBot_ControllerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85ED99041409448200830F2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85ED98DE1409448200830F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED98F41409448200830F2D /* main.m in Sources */,
+				85ED98F71409448200830F2D /* MakerBot_ControllerAppDelegate.m in Sources */,
+				85ED98FD1409448200830F2D /* MakerBot_ControllerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85ED99011409448200830F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ED99161409448300830F2D /* MakerBot_ControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85ED990B1409448200830F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85ED98E11409448200830F2D /* MakerBot Controller */;
+			targetProxy = 85ED990A1409448200830F2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85ED98EF1409448200830F2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85ED98F01409448200830F2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85ED98F81409448200830F2D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85ED98F91409448200830F2D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		85ED98FE1409448200830F2D /* MakerBot_ControllerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85ED98FF1409448200830F2D /* en */,
+			);
+			name = MakerBot_ControllerViewController.xib;
+			sourceTree = "<group>";
+		};
+		85ED990F1409448300830F2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85ED99101409448300830F2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85ED99171409448300830F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85ED99181409448300830F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		85ED991A1409448300830F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakerBot Controller/MakerBot Controller-Prefix.pch";
+				INFOPLIST_FILE = "MakerBot Controller/MakerBot Controller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85ED991B1409448300830F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakerBot Controller/MakerBot Controller-Prefix.pch";
+				INFOPLIST_FILE = "MakerBot Controller/MakerBot Controller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		85ED991D1409448300830F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MakerBot Controller.app/MakerBot Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakerBot ControllerTests/MakerBot ControllerTests-Prefix.pch";
+				INFOPLIST_FILE = "MakerBot ControllerTests/MakerBot ControllerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		85ED991E1409448300830F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MakerBot Controller.app/MakerBot Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MakerBot ControllerTests/MakerBot ControllerTests-Prefix.pch";
+				INFOPLIST_FILE = "MakerBot ControllerTests/MakerBot ControllerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85ED98DC1409448200830F2D /* Build configuration list for PBXProject "MakerBot Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED99171409448300830F2D /* Debug */,
+				85ED99181409448300830F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85ED99191409448300830F2D /* Build configuration list for PBXNativeTarget "MakerBot Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED991A1409448300830F2D /* Debug */,
+				85ED991B1409448300830F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85ED991C1409448300830F2D /* Build configuration list for PBXNativeTarget "MakerBot ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED991D1409448300830F2D /* Debug */,
+				85ED991E1409448300830F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85ED98D91409448200830F2D /* Project object */;
+}
