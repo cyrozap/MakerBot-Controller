@@ -20,7 +20,7 @@ xcuserdata/
 xcuserdata
 
 # Generated files
-*.[oa]
+*.o
 *.pyc
 *.6
 6.out

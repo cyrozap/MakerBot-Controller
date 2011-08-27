@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		855E4A7714095D3E00E1FD94 /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 855E4A7614095D3E00E1FD94 /* libRscMgrUniv.a */; };
+		855E4A7914095D9A00E1FD94 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855E4A7814095D9A00E1FD94 /* ExternalAccessory.framework */; };
 		85A3395C1409481E00D27487 /* Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A3395B1409481E00D27487 /* Retina.png */; };
 		85A3395F1409486500D27487 /* Regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A3395E1409486500D27487 /* Regular.png */; };
 		85ED98E71409448200830F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E61409448200830F2D /* UIKit.framework */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		855E4A7314095D3E00E1FD94 /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
+		855E4A7414095D3E00E1FD94 /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
+		855E4A7614095D3E00E1FD94 /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
+		855E4A7814095D9A00E1FD94 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		85A3395B1409481E00D27487 /* Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Retina.png; sourceTree = "<group>"; };
 		85A3395E1409486500D27487 /* Regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Regular.png; sourceTree = "<group>"; };
 		85ED98E21409448200830F2D /* MakerBot Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MakerBot Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,9 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855E4A7914095D9A00E1FD94 /* ExternalAccessory.framework in Frameworks */,
 				85ED98E71409448200830F2D /* UIKit.framework in Frameworks */,
 				85ED98E91409448200830F2D /* Foundation.framework in Frameworks */,
 				85ED98EB1409448200830F2D /* CoreGraphics.framework in Frameworks */,
+				855E4A7714095D3E00E1FD94 /* libRscMgrUniv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +93,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		855E4A7214095D3E00E1FD94 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				855E4A7314095D3E00E1FD94 /* redparkSerial.h */,
+				855E4A7414095D3E00E1FD94 /* RscMgr.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		855E4A7514095D3E00E1FD94 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				855E4A7614095D3E00E1FD94 /* libRscMgrUniv.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		85ED98D71409448200830F2D = {
 			isa = PBXGroup;
 			children = (
+				855E4A7214095D3E00E1FD94 /* inc */,
+				855E4A7514095D3E00E1FD94 /* lib */,
 				85A3395E1409486500D27487 /* Regular.png */,
 				85A3395B1409481E00D27487 /* Retina.png */,
 				85ED98EC1409448200830F2D /* MakerBot Controller */,
@@ -109,6 +136,7 @@
 		85ED98E51409448200830F2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				855E4A7814095D9A00E1FD94 /* ExternalAccessory.framework */,
 				85ED98E61409448200830F2D /* UIKit.framework */,
 				85ED98E81409448200830F2D /* Foundation.framework */,
 				85ED98EA1409448200830F2D /* CoreGraphics.framework */,
@@ -370,7 +398,12 @@
 				GCC_PREFIX_HEADER = "MakerBot Controller/MakerBot Controller-Prefix.pch";
 				INFOPLIST_FILE = "MakerBot Controller/MakerBot Controller-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -384,7 +417,12 @@
 				GCC_PREFIX_HEADER = "MakerBot Controller/MakerBot Controller-Prefix.pch";
 				INFOPLIST_FILE = "MakerBot Controller/MakerBot Controller-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
