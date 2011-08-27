@@ -10,6 +10,11 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Retina.png</string>
+		<string>Regular.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>cyrozap.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85A3395C1409481E00D27487 /* Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A3395B1409481E00D27487 /* Retina.png */; };
+		85A3395F1409486500D27487 /* Regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A3395E1409486500D27487 /* Regular.png */; };
 		85ED98E71409448200830F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E61409448200830F2D /* UIKit.framework */; };
 		85ED98E91409448200830F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E81409448200830F2D /* Foundation.framework */; };
 		85ED98EB1409448200830F2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98EA1409448200830F2D /* CoreGraphics.framework */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85A3395B1409481E00D27487 /* Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Retina.png; sourceTree = "<group>"; };
+		85A3395E1409486500D27487 /* Regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Regular.png; sourceTree = "<group>"; };
 		85ED98E21409448200830F2D /* MakerBot Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MakerBot Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ED98E61409448200830F2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85ED98E81409448200830F2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +88,8 @@
 		85ED98D71409448200830F2D = {
 			isa = PBXGroup;
 			children = (
+				85A3395E1409486500D27487 /* Regular.png */,
+				85A3395B1409481E00D27487 /* Retina.png */,
 				85ED98EC1409448200830F2D /* MakerBot Controller */,
 				85ED990C1409448200830F2D /* MakerBot ControllerTests */,
 				85ED98E51409448200830F2D /* Frameworks */,
@@ -225,6 +231,8 @@
 				85ED98F11409448200830F2D /* InfoPlist.strings in Resources */,
 				85ED98FA1409448200830F2D /* MainWindow.xib in Resources */,
 				85ED99001409448200830F2D /* MakerBot_ControllerViewController.xib in Resources */,
+				85A3395C1409481E00D27487 /* Retina.png in Resources */,
+				85A3395F1409486500D27487 /* Regular.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +451,7 @@
 				85ED991B1409448300830F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85ED991C1409448300830F2D /* Build configuration list for PBXNativeTarget "MakerBot ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +460,7 @@
 				85ED991E1409448300830F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
