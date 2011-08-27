@@ -13,7 +13,11 @@ build/*
 *.xcuserstate
 *.xcodeproj/ !*.xcodeproj/project.pbxproj
 project.xcworkspace/*
+project.xcworkspace/
+project.xcworkspace 
 xcuserdata/*
+xcuserdata/
+xcuserdata
 
 # Generated files
 *.[oa]
