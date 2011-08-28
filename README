@@ -1,14 +1,22 @@
+NOTE: By using this software, you agree to the Redpark License for the use of the included Redpark Libraries. The rest of this software is Copyright 2011 Forest Crossman and is distributed under the GNU General Public License 3.0.
+
+------------------------------------------------------------------------------------------
+
+INSTRUCTIONS:
 Clone the repository, build with Xcode, then install the app on your iOS device.
 
+BACKGROUND:
 I'm making this app to both teach me a little Objective-C and to give me (and hopefully others) a means of simply controlling a MakerBot from an iPhone.
 
+EXPLANATIONS:
 This app is not yet optimized for the iPad because:
 	1. I don't yet own an iPad.
 	2. I'm a novice programmer and adding an iPad version to the project would complicate things.
 
+CONTRIBUTE:
 If you want to contribute to the development of this app, feel free to fork the repository and make any improvements you want. If I deem your improvements worthy, I'll merge them back into the main branch. Yay, open source!
 
-To Do:
+TO DO:
 - Add GCode support.
 - Add STL import & slicing support.
 - Add STL viewing (on iPad).
