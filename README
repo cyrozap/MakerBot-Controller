@@ -1,0 +1,15 @@
+Clone the repository and compile with Xcode to use on your iOS device.
+
+I'm making this app to both teach me a little Objective-C and to give me (and hopefully others) a means of simply controlling a MakerBot from an iPhone.
+
+This app is not yet optimized for the iPad because:
+	1. I don't yet own an iPad.
+	2. I'm a novice programmer and adding an iPad version to the project would complicate things.
+
+If you want to contribute to the development of this app, feel free to fork the repository and make any improvements you want. If I deem your improvements worthy, I'll merge them back into the main branch. Yay, open source!
+
+To Do:
+- Add GCode support.
+- Add STL import & slicing support.
+- Add STL viewing (on iPad).
+- Make it beautiful.
