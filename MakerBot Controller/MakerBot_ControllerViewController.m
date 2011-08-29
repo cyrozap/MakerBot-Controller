@@ -91,42 +91,56 @@
 - (IBAction)homePosition:(id)sender {
     if (homeButton.touchInside) {
         NSLog(@"Moving Axes to Home Position");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 
 - (IBAction)plusXPosition:(id)sender {
     if (plusXButton.touchInside) {
         NSLog(@"Moving 5mm Right");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 
 - (IBAction)minusXPosition:(id)sender {
     if (minusXButton.touchInside) {
         NSLog(@"Moving 5mm Left");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 
 - (IBAction)plusYPosition:(id)sender {
     if (plusYButton.touchInside) {
         NSLog(@"Moving 5mm Away");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 
 - (IBAction)minusYPosition:(id)sender {
     if (minusYButton.touchInside) {
         NSLog(@"Moving 5mm Toward");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 
 - (IBAction)plusZPosition:(id)sender {
     if (plusZButton.touchInside) {
         NSLog(@"Moving 5mm Up");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 
 - (IBAction)minusZPosition:(id)sender {
     if (minusZButton.touchInside) {
         NSLog(@"Moving 5mm Down");
+        txBuffer[0] = (int) '1';
+        [rscMgr write:txBuffer Length:1];
     }
 }
 

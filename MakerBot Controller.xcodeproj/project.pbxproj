@@ -11,6 +11,8 @@
 		855E4A7914095D9A00E1FD94 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855E4A7814095D9A00E1FD94 /* ExternalAccessory.framework */; };
 		85A3395C1409481E00D27487 /* Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A3395B1409481E00D27487 /* Retina.png */; };
 		85A3395F1409486500D27487 /* Regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A3395E1409486500D27487 /* Regular.png */; };
+		85EA1412140B3346001DB7FA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EA1411140B3346001DB7FA /* Default@2x.png */; };
+		85EA1414140B3475001DB7FA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EA1413140B3475001DB7FA /* Default.png */; };
 		85ED98E71409448200830F2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E61409448200830F2D /* UIKit.framework */; };
 		85ED98E91409448200830F2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98E81409448200830F2D /* Foundation.framework */; };
 		85ED98EB1409448200830F2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED98EA1409448200830F2D /* CoreGraphics.framework */; };
@@ -45,6 +47,8 @@
 		855E4A7814095D9A00E1FD94 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		85A3395B1409481E00D27487 /* Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Retina.png; sourceTree = "<group>"; };
 		85A3395E1409486500D27487 /* Regular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Regular.png; sourceTree = "<group>"; };
+		85EA1411140B3346001DB7FA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		85EA1413140B3475001DB7FA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		85ED98E21409448200830F2D /* MakerBot Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MakerBot Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85ED98E61409448200830F2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85ED98E81409448200830F2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +117,8 @@
 		85ED98D71409448200830F2D = {
 			isa = PBXGroup;
 			children = (
+				85EA1413140B3475001DB7FA /* Default.png */,
+				85EA1411140B3346001DB7FA /* Default@2x.png */,
 				855E4A7214095D3E00E1FD94 /* inc */,
 				855E4A7514095D3E00E1FD94 /* lib */,
 				85A3395E1409486500D27487 /* Regular.png */,
@@ -261,6 +267,8 @@
 				85ED99001409448200830F2D /* MakerBot_ControllerViewController.xib in Resources */,
 				85A3395C1409481E00D27487 /* Retina.png in Resources */,
 				85A3395F1409486500D27487 /* Regular.png in Resources */,
+				85EA1412140B3346001DB7FA /* Default@2x.png in Resources */,
+				85EA1414140B3475001DB7FA /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MakerBot Controller.app/MakerBot Controller";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -455,6 +465,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MakerBot Controller.app/MakerBot Controller";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
