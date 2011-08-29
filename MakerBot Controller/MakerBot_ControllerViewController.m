@@ -90,7 +90,7 @@
 
 - (IBAction)homePosition:(id)sender {
     if (homeButton.touchInside) {
-        NSLog(@"Moving Axes to Home Position");
+        debugText.text=@"Moving Axes to Home Position";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -98,7 +98,7 @@
 
 - (IBAction)plusXPosition:(id)sender {
     if (plusXButton.touchInside) {
-        NSLog(@"Moving 5mm Right");
+        debugText.text=@"Moving 5mm Right";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -106,7 +106,7 @@
 
 - (IBAction)minusXPosition:(id)sender {
     if (minusXButton.touchInside) {
-        NSLog(@"Moving 5mm Left");
+        debugText.text=@"Moving 5mm Left";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -114,7 +114,7 @@
 
 - (IBAction)plusYPosition:(id)sender {
     if (plusYButton.touchInside) {
-        NSLog(@"Moving 5mm Away");
+        debugText.text=@"Moving 5mm Away";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -122,7 +122,7 @@
 
 - (IBAction)minusYPosition:(id)sender {
     if (minusYButton.touchInside) {
-        NSLog(@"Moving 5mm Toward");
+        debugText.text=@"Moving 5mm Toward";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -130,7 +130,7 @@
 
 - (IBAction)plusZPosition:(id)sender {
     if (plusZButton.touchInside) {
-        NSLog(@"Moving 5mm Up");
+        debugText.text=@"Moving 5mm Up";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -138,7 +138,7 @@
 
 - (IBAction)minusZPosition:(id)sender {
     if (minusZButton.touchInside) {
-        NSLog(@"Moving 5mm Down");
+        debugText.text=@"Moving 5mm Down";
         txBuffer[0] = (int) '1';
         [rscMgr write:txBuffer Length:1];
     }
@@ -147,12 +147,13 @@
 #pragma mark - RscMgrDelegate methods
 
 - (void) cableConnected:(NSString *)protocol {
+    debugText.text=@"Cable Connected";
     [rscMgr setBaud:38400];
-	[rscMgr open]; 
+	[rscMgr open];
 }
 
 - (void) cableDisconnected {
-    
+    debugText.text=@"Cable Disconnected";
 }
 
 - (void) portStatusChanged {
