@@ -63,7 +63,11 @@
     [super viewDidLoad];
     rscMgr = [[RscMgr alloc] init]; 
     [rscMgr setDelegate:self];
-    
+    /*
+    const char zero[] = "\xd5\x0d\x82\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x63"; // Set position to 0,0,0. This is a hack to get the movment to work (because it only allows absolute movements).
+    NSData *zeroData = [[NSData alloc] initWithBytes: &zero length: sizeof(zero)-1];
+    [rscMgr write:[zeroData zero] Length:[zeroData length]];
+    */
 }
 
 
@@ -90,35 +94,39 @@
 
 - (IBAction)homePosition:(id)sender {
     if (homeButton.touchInside) {
-        debugText.text=@"Moving Axes to Home Position";
-        txBuffer[0] = (int) '1';
-        [rscMgr write:txBuffer Length:1];
+        // debugText.text=@"Moving Axes to Home Position";
+        debugText.text=@"Setting Position to 0,0,0.";
+        const char bytes[] = "\xd5\x0d\x82\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x63";
+        NSData *homeData = [[NSData alloc] initWithBytes:bytes length:sizeof(bytes)-1];
+        [rscMgr write:[homeData bytes] Length:[homeData length]];
     }
 }
 
 - (IBAction)plusXPosition:(id)sender {
     if (plusXButton.touchInside) {
         debugText.text=@"Moving 5mm Right";
-        UInt64 s = 0xaf000104008805d5;
-        NSData *plusXData0 = [[NSData alloc] initWithBytes: &s length: sizeof(s)];
-        [rscMgr write:[plusXData0 bytes] Length:[plusXData0 length]];
-        UInt64 a = 0x00000000008111d5;
-        NSData *plusXData = [[NSData alloc] initWithBytes: &a length: sizeof(a)];
+        const char bytes[] = "\xd5\x11\x81\x3b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x61\x29\x00\x00\xfd";
+        NSData *plusXData = [[NSData alloc] initWithBytes:bytes length:sizeof(bytes)-1];
         [rscMgr write:[plusXData bytes] Length:[plusXData length]];
-        UInt64 b = 0x6100000000000000;
-        NSData *plusXData2 = [[NSData alloc] initWithBytes: &b length: sizeof(b)];
-        [rscMgr write:[plusXData2 bytes] Length:[plusXData2 length]];
-        UInt32 c = 0x6c000029;
-        NSData *plusXData3 = [[NSData alloc] initWithBytes: &c length: sizeof(c)];
-        [rscMgr write:[plusXData3 bytes] Length:[plusXData3 length]];
+        /*
+        const char zeroXPlus[] = "\xd5\x0d\x82\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x63"; // Set position to 0,0,0. This is a hack to get the movment to work (because it only allows absolute movements).
+        NSData *zeroXPlusData = [[NSData alloc] initWithBytes: &zeroXPlus length: sizeof(zeroXPlus)-1];
+        [rscMgr write:[zeroXPlusData zeroXPlus] Length:[zeroXPlusData length]];
+        */
     }
 }
 
 - (IBAction)minusXPosition:(id)sender {
     if (minusXButton.touchInside) {
         debugText.text=@"Moving 5mm Left";
-        txBuffer[0] = (int) '1';
-        [rscMgr write:txBuffer Length:1];
+        const char bytes[] = "\xd5\x11\x81\xc5\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x61\x29\x00\x00\x2d";
+        NSData *minusXData = [[NSData alloc] initWithBytes:bytes length:sizeof(bytes)-1];
+        [rscMgr write:[minusXData bytes] Length:[minusXData length]];
+        /*
+        const char zeroXMinus[] = "\xd5\x0d\x82\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x63"; // Set position to 0,0,0. This is a hack to get the movment to work (because it only allows absolute movements).
+        NSData *zeroMinusXData = [[NSData alloc] initWithBytes: &zeroXMinus length: sizeof(zeroXMinus)-1];
+        [rscMgr write:[zeroMinusXData zeroXMinus] Length:[zeroMinusXData length]];
+        */
     }
 }
 
