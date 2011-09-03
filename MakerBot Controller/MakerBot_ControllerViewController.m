@@ -96,7 +96,7 @@
     if (homeButton.touchInside) {
         // debugText.text=@"Moving Axes to Home Position";
         debugText.text=@"Setting Position to 0,0,0.";
-        const char bytes[] = "\xd5\x0d\x82\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x63";
+        const char bytes[] = "\xd5\x0d\x82\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x63"; // Set position to 0,0,0. This is a hack to get the movment to work (because it only allows absolute movements).
         NSData *homeData = [[NSData alloc] initWithBytes:bytes length:sizeof(bytes)-1];
         [rscMgr write:[homeData bytes] Length:[homeData length]];
     }
@@ -105,7 +105,7 @@
 - (IBAction)plusXPosition:(id)sender {
     if (plusXButton.touchInside) {
         debugText.text=@"Moving 5mm Right";
-        const char bytes[] = "\xd5\x11\x81\x3b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x61\x29\x00\x00\xfd";
+        const char bytes[] = "\xd5\x11\x81\x3b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x61\x29\x00\x00\xfd"; // Set position to X = 5.
         NSData *plusXData = [[NSData alloc] initWithBytes:bytes length:sizeof(bytes)-1];
         [rscMgr write:[plusXData bytes] Length:[plusXData length]];
         /*
@@ -119,7 +119,7 @@
 - (IBAction)minusXPosition:(id)sender {
     if (minusXButton.touchInside) {
         debugText.text=@"Moving 5mm Left";
-        const char bytes[] = "\xd5\x11\x81\xc5\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x61\x29\x00\x00\x2d";
+        const char bytes[] = "\xd5\x11\x81\xc5\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x61\x29\x00\x00\x2d"; // Set position to X = -5.
         NSData *minusXData = [[NSData alloc] initWithBytes:bytes length:sizeof(bytes)-1];
         [rscMgr write:[minusXData bytes] Length:[minusXData length]];
         /*
