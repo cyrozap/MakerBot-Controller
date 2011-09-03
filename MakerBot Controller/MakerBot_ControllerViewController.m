@@ -99,8 +99,18 @@
 - (IBAction)plusXPosition:(id)sender {
     if (plusXButton.touchInside) {
         debugText.text=@"Moving 5mm Right";
-        txBuffer[0] = (int) '1';
-        [rscMgr write:txBuffer Length:1];
+        UInt64 s = 0xaf000104008805d5;
+        NSData *plusXData0 = [[NSData alloc] initWithBytes: &s length: sizeof(s)];
+        [rscMgr write:[plusXData0 bytes] Length:[plusXData0 length]];
+        UInt64 a = 0x00000000008111d5;
+        NSData *plusXData = [[NSData alloc] initWithBytes: &a length: sizeof(a)];
+        [rscMgr write:[plusXData bytes] Length:[plusXData length]];
+        UInt64 b = 0x6100000000000000;
+        NSData *plusXData2 = [[NSData alloc] initWithBytes: &b length: sizeof(b)];
+        [rscMgr write:[plusXData2 bytes] Length:[plusXData2 length]];
+        UInt32 c = 0x6c000029;
+        NSData *plusXData3 = [[NSData alloc] initWithBytes: &c length: sizeof(c)];
+        [rscMgr write:[plusXData3 bytes] Length:[plusXData3 length]];
     }
 }
 
